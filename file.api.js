@@ -38,7 +38,9 @@ module.exports = async (waw) => {
 		create: {
 			ensure: (req, res, next) => {
 				if (req.user) {
-					req.body.url = "https://webart.work" + req.body.path;
+					req.body.url =
+						(waw.config.url || "https://webart.work") +
+						req.body.path;
 
 					next();
 				} else {
