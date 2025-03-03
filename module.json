@@ -1,6 +1,8 @@
 {
 	"repo": "https://github.com/WebArtWork/waw-file.git",
-    "name": "File",
-    "router": "index.js",
-    "dependencies": {}
+	"name": "File",
+	"crud": {
+		"delete": [""]
+	},
+	"dependencies": {}
 }
